@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+
+        body {
+            margin: 0px;
+            background-color: #fae1dd ;
+        }
+
+        .navBar {
+            display: flex;
+            background-image: linear-gradient(#ff80d5, #ccddff);
+            height: 50px;
+            justify-content: space-between;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .menu li {
+            display: inline;
+            margin: 0 20 px;
+            align-items: center;
+            position: relative;
+        }
+
+        .menu li a {
+            color: #4d0066;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+        }
+
+
+        .subMenuShapes {
+            display: none;
+            background-image: linear-gradient(#ff80d5, #ccddff);
+            text-align: center;
+            width: 100%;
+            padding: 5px;
+            position: absolute;
+            left: 0px;
+            min-width: 140px;
+            top: 100%;
+            height: 200px;
+
+        }
+
+        .subMenuShapes li {
+            display: block;
+            margin: 0 20px;
+            align-items: center;
+            position: relative;
+            height: 100px;
+        }
+
+        .shapes:hover .subMenuShapes {
+            display: block;
+        }
+
+        .subMenuShapes li {
+            display: block;
+            margin: 8px;
+        }
+
+
+
+        .subMenuConnect {
+            display: none;
+            background-image: linear-gradient(#ff80d5, #ccddff);
+            text-align: center;
+            width: 100%;
+            padding: 5px;
+            position: absolute;
+            left: 0px;
+            min-width: 115px;
+            top: 100%;
+
+        }
+
+        .subMenuConnect li {
+            display: block;
+            margin: 0 20px;
+            align-items: center;
+            position: relative;
+        }
+
+        .Connect:hover .subMenuConnect {
+            display: block;
+        }
+
+        .subMenuConnect li {
+            display: block;
+            margin: 8px;
+        }
+
+        .search {
+            border: 2px solid #808080;
+            background-color: transparent;
+            border-radius: 25px;
+            text-align: center;
+            color: white;
+        }
+
+        .NameOffice {
+            text-align: center;
+            margin: auto 10px;
+        }
+
+        .SignIn h4 {
+            display: inline;
+        }
+
+        .heartSec {
+            /* display: none; */
+            position: relative;
+            /* margin: 50% 50%; */
+
+            display: inline-block;
+            margin: auto;
+        }
+
+        .rec {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            transform: rotate(45deg);
+        }
+
+        .cir1 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            top: -17px;
+            left: -17px;
+        }
+
+        .cir2 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            top: -17px;
+            left: 16px;
+        }
+
+        .unlimitedSec {
+            /* display: none; */
+            position: relative;
+            /* margin: 0% 80%; */
+            display: inline-block;
+            margin: auto;
+        }
+
+        .left {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            /* background-color: lawngreen; */
+            border: 2px solid red;
+            border-bottom-left-radius: 50%;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            transform: rotate(45deg);
+        }
+
+        .right {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            /* background-color: red; */
+            border: 2px solid red;
+            border-bottom-left-radius: 50%;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            transform: rotate(225deg);
+            left: 73px;
+        }
+
+        .sub1 {
+            width: 70px;
+
+        }
+
+        .sub2 {
+            width: 0px;
+
+        }
+        .btnsignIn{
+background-color: transparent;
+border: none;
+text-align: center;
+margin:20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="navBar">
+        <h4 class="NameOffice">
+            Name Office
+        </h4>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li class="shapes"> <a href="#">shapes </a>
+                <ul class="subMenuShapes">
+                    <li class="sub1">
+                        <div class="heartSec">
+                            <div class="rec"></div>
+                            <div class="cir1"></div>
+                            <div class="cir2"></div>
+                        </div>
+                    </li>
+                    <li class="sub2">
+                        <div class="unlimitedSec">
+                            <div class="left">
+                            </div>
+                            <div class="right">
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li>aaa</li>
+               <li>bbbbb</li>
+                -->
+
+                </ul>
+            </li>
+            <li><a href="#"> About AS</a></li>
+            <li class="Connect"> <a href="#">Connect </a>
+                <ul class="subMenuConnect">
+                    <li> <a href="#"> Telegram
+                        <br>
+                        <i class="bi bi-send-fill"></i>
+                    </a> </li>
+                    <li> <a href="#"> Instagram
+                    <br>
+                <i class="bi bi-instagram"></i></a> </li>
+                    <li> <a href="#"> Linkedin
+                        <br>
+                        <i class="bi bi-linkedin"></i>
+                    </a> </li>
+                    <li> <a href="#"> Facebook
+                        <br>
+                        <i class="bi bi-facebook"></i>
+                    </a> </li>
+                    <li> <a href="#"> Whatsapp
+                        <br>
+                        <i class="bi bi-whatsapp"></i>
+                    </a> </li>
+                </ul>
+            </li>
+            <li>
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="search" class="search">
+            </li>
+        </ul>
+        <div class="SignIn">
+            <button class="btnsignIn">
+                <h4 class="bi bi-person-check"></h4> Sign in
+            </button>
+        </div>
+    </section>
+    <section class="content">
+
+
+    </section>
+</body>
+
+</html>
